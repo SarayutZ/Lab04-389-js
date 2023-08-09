@@ -367,13 +367,36 @@
             </table>
             <!-- s -->
           </div>
-          <h2 class="text-sell">
-            ราคารวมทั้งหมด
-            <span class="text-danger" id="grandTotal">0</span> บาท
-          </h2>
+         
+          <form class="form-you" method="post">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+              <div id="emailHelp" class="form-text">โปรดกรอก email ให้ถูกต้อง</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" required>
+            </div>
+            <select class="form-select form-select-lg mb-3" aria-label="Large select example" required>
+              <option value="">โปรดเลือก ช่องทางการชำระเงิน</option>
+              <option value="1">เก็บเงินปลายทาง</option>
+              <option value="2">ชำระผ่าน พร้อมเพย์</option>
+              <option value="3">ชำระผ่าน ธนาคาร</option>
+            </select>
+           
+            <h2 class="text-sell">
+              ราคารวมทั้งหมด
+              <span class="text-danger" id="grandTotal">0</span> บาท
+            </h2>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
         </div>
+        
       </div>
+      
     </div>
+
   </body>
 
   <script src="java.js"></script>
