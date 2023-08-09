@@ -9,6 +9,7 @@
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
+    <script src="https://kit.fontawesome.com/037a863ff4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
@@ -16,9 +17,9 @@
   <body>
     <div
       id="carouselExampleCaptions"
-      class="carousel slide h-50"
+      class="carousel slide d-block h-100"
       data-bs-ride="carousel"
-      data-bs-interval="3000"
+      data-bs-interval="5000"
     >
       <div class="carousel-indicators">
         <button
@@ -42,23 +43,23 @@
           aria-label="Slide 3"
         ></button>
       </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="/images/1.jpg" class="d-block h-100 w-100" alt="..." />
+      <div class="carousel-inner d-block ">
+        <div class="carousel-item active ">
+          <img src="/images/1.jpg" class="d-block " alt="..." />
           <div class="carousel-caption d-none d-md-block">
             <h5>ภาพมาจาก</h5>
             <p>https://www.pexels.com/th-th/photo/3457273/</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="/images//2.jpg" class="d-block h-100 w-100" alt="..." />
+          <img src="/images//2.jpg" class="d-block " alt="..." />
           <div class="carousel-caption d-none d-md-block">
             <h5>ภาพมาจาก</h5>
             <p>https://www.pexels.com/th-th/photo/45717/</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="/images//3.jpg" class="d-block w-100" alt="..." />
+          <img src="/images//3.jpg" class="d-block " alt="..." />
           <div class="carousel-caption d-none d-md-block">
             <h5>ภาพมาจาก</h5>
             <p>https://www.pexels.com/th-th/photo/2228557/</p>
@@ -85,9 +86,17 @@
       </button>
     </div>
 
+    
+
+
+        <!-- Trigger/Open The Modal -->
+        <div class="container-bg  d-flex justify-content-center ">
+          <h3 class="see  " id="myBtn"><i class="fa-solid fa-hand-pointer"></i>ตรวจสอบรายการสั่งซื้อ</h->
+        </div>
+
     <!-- ส่วนสินค้า -->
 
-    <div class="box-shop d-flex m-3">
+    <div id="box" class="box-shop d-flex ">
       <div class="card" style="width: 30rem">
         <img
           src="https://image.makewebeasy.net/makeweb/m_1920x0/Z9S9L5BrM/DefaultData/Cover_%E0%B8%88%E0%B8%B4%E0%B8%95%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%AA%E0%B8%B2%E0%B8%A2%E0%B8%94%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B8%81_1.jpg"
@@ -107,7 +116,7 @@
               <div class="add-price d-flex justify-content-center">
                 <button
                   type="button"
-                  class="btn btn-outline-dark"
+                  class="btn btn-dark"
                   id="increaseBtn1"
                 >
                   +
@@ -120,7 +129,7 @@
                 />
                 <button
                   type="button"
-                  class="btn btn-outline-dark"
+                  class="btn btn-danger"
                   id="decreaseBtn1"
                 >
                   -
@@ -147,7 +156,7 @@
               <div class="add-price d-flex justify-content-center">
                 <button
                   type="button"
-                  class="btn btn-outline-dark increaseBtn"
+                  class="btn btn-dark increaseBtn"
                   id="increaseBtn2"
                 >
                   +
@@ -160,7 +169,7 @@
                 />
                 <button
                   type="button"
-                  class="btn btn-outline-dark decreaseBtn"
+                  class="btn btn-danger decreaseBtn"
                   id="decreaseBtn2"
                 >
                   -
@@ -190,7 +199,7 @@
               <div class="add-price d-flex justify-content-center">
                 <button
                   type="button"
-                  class="btn btn-outline-dark increaseBtn"
+                  class="btn btn-dark increaseBtn"
                   id="increaseBtn3"
                 >
                   +
@@ -203,7 +212,7 @@
                 />
                 <button
                   type="button"
-                  class="btn btn-outline-dark decreaseBtn"
+                  class="btn btn-danger decreaseBtn"
                   id="decreaseBtn3"
                 >
                   -
@@ -214,7 +223,7 @@
         </div>
       </div>
     </div>
-    <div class="box-shop d-flex m-3">
+    <div id="card" class="box-shop d-flex ">
       <div class="card" style="width: 30rem">
         <img
           src="https://image.makewebeasy.net/makeweb/r_409x409/Z9S9L5BrM/buinessss/%E0%B8%9B%E0%B8%81%E0%B8%AB%E0%B8%99%E0%B9%89%E0%B8%B2_Ignore_everybody_%E0%B8%9B%E0%B8%9B_2.jpg?v=202206091808"
@@ -234,20 +243,20 @@
               <div class="add-price d-flex justify-content-center">
                 <button
                   type="button"
-                  class="btn btn-outline-dark"
+                  class="btn btn-dark"
                   id="increaseBtn4"
                 >
                   +
                 </button>
                 <input
                   type="text"
-                  class="form-control w-25"
+                  class="form-control w-25 text-center"
                   id="inputField4"
                   value="0"
                 />
                 <button
                   type="button"
-                  class="btn btn-outline-dark"
+                  class="btn btn-danger"
                   id="decreaseBtn4"
                 >
                   -
@@ -277,7 +286,7 @@
               <div class="add-price d-flex justify-content-center">
                 <button
                   type="button"
-                  class="btn btn-outline-dark increaseBtn"
+                  class="btn btn-dark increaseBtn"
                   id="increaseBtn5"
                 >
                   +
@@ -290,7 +299,7 @@
                 />
                 <button
                   type="button"
-                  class="btn btn-outline-dark decreaseBtn"
+                  class="btn btn-danger decreaseBtn"
                   id="decreaseBtn5"
                 >
                   -
@@ -301,7 +310,7 @@
         </div>
       </div>
 
-      <div class="card" style="width: 30rem">
+      <div  class="card" style="width: 30rem">
         <img
           src="https://image.makewebeasy.net/makeweb/r_409x409/Z9S9L5BrM/DefaultData/Cover_how_to_make_work_not_suck_%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B9%80%E0%B8%AA%E0%B9%89%E0%B8%99%E0%B8%97%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%B3%E0%B8%87%E0%B8%B2%E0%B8%99_%E0%B9%82%E0%B8%A3%E0%B8%A2%E0%B9%84%E0%B8%9B%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2%E0%B9%80%E0%B8%9B%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81%E0%B8%97%E0%B8%B8%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99_1.jpg?v=202206091808"
           class="w-50 d-block mx-auto card-img-top w-50 mt-2"
@@ -315,12 +324,12 @@
           <h2 id="price-6" class="card-header d-flex justify-content-center">
             ฿250
           </h2>
-          <div class="d-grid gap-2 d-md-block">
-            <div class="container mt-4">
-              <div class="add-price d-flex justify-content-center">
+          <div class="d-grid gap-2 d-md-block ">
+            <div class="container mt-4 ">
+              <div class="add-price d-flex justify-content-center ">
                 <button
                   type="button"
-                  class="btn btn-outline-dark increaseBtn"
+                  class="btn btn-dark increaseBtn"
                   id="increaseBtn6"
                 >
                   +
@@ -333,7 +342,7 @@
                 />
                 <button
                   type="button"
-                  class="btn btn-outline-dark decreaseBtn"
+                  class="btn btn-danger decreaseBtn"
                   id="decreaseBtn6"
                 >
                   -
@@ -344,27 +353,36 @@
         </div>
       </div>
     </div>
-    <p>Grand Total: <span id="grandTotal">0</span> บาท</p>
-    <div class="modal" tabindex="-1" role="dialog">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Modal title</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <p>Modal body text goes here.</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary">Save changes</button>
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
+   
+  
 
+
+
+    
+    <!-- The Modal -->
+    <div id="myModal" class="modal ">
+    
+      <!-- Modal content -->
+      <div class="modal-content ">
+        <div class="modal-header">
+          <h2>รายการสั่งสินค้า</h2>
+          <span class="close">&times;</span>
+        </div>
+        <div class="modal-body">
+          
+          
+          <pre id="billDetails"></pre>
+          <h1>ราคารวม: <span id="grandTotal">0</span> บาท</h1>
+          <!-- <h2 id="price-${product.id}" class="card-header d-flex justify-content-center"> -->
+
+          </h2>
+        </div>
+
+      </div>
+    
+    </div>
+    </div>
+  
 
     
   </body>
