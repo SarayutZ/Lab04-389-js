@@ -16,7 +16,7 @@
       ></script>
       <link rel="stylesheet" href="style.css" />
       <link rel="icon" href="./images/minji.ico">
-      <title>TinyBook</title>
+      <title>TinyBookMe</title>
     </head>
 
     <body>
@@ -396,34 +396,21 @@
               </div>
 
               <form class="form-you" method="post">
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label"
-                    >Email address</label
-                  >
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="exampleInputEmail1"
-                    aria-describedby="emailHelp"
-                    required
-                  />
-                  <div id="emailHelp" class="form-text">
-                    โปรดกรอก email ให้ถูกต้อง
-                  </div>
+                
+                <div class="input-group mb-3">
+                  <span class="input-group-text fw-bold" id="basic-addon1 ">ชื่อ-นามสกุล</span>
+                  <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
                 </div>
-                <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label"
-                    >Password</label
-                  >
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="exampleInputPassword1"
-                    required
-                  />
+                
+
+                <div class="input-group mb-3">
+                  <span class="input-group-text fw-bold ">ที่อยู่ผู้สั่ง</span>
+                  <textarea class="form-control" aria-label="With textarea"></textarea>
                 </div>
+                
+               
                 <select
-                  class="form-select form-select-lg mb-3"
+                  class="form-select form-select-lg mb-3 fw-bold"
                   aria-label="Large select example"
                   required
                 >
@@ -445,8 +432,11 @@
                   ค่าสินค้าหลังหักส่วนลด
                   <span class="text-danger" id="Truesome">0</span> บาท
                 </h2>
+                <div class="button-s d-flex justify-content-end ">
 
-                <button type="submit" class="btn btn-primary">Submit</button>
+                  <button type="submit" class="btn btn-success m-2">Ok</button>
+                  <button type="reset"  class="btn btn-danger m-2" data-bs-dismiss="modal">Reset</button>
+                </div>
               </form>
             </div>
           </div>
