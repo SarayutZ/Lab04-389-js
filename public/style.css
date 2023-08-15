@@ -226,3 +226,16 @@ tr:nth-child(even) {
   display: none;
   /* โค้ด CSS อื่นๆ ที่เกี่ยวข้องกับการแสดงและรูปแบบของโมดัล */
 }
+.promotion{
+
+  background-color: rgb(255, 82, 82);
+  padding: 20px;
+}
+.promotion h2{
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+}
+.promotion i{
+  color: orange;
+}
